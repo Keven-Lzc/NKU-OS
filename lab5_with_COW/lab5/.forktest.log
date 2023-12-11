@@ -1,0 +1,390 @@
+
+OpenSBI v0.4 (Jul  2 2019 11:53:53)
+   ____                    _____ ____ _____
+  / __ \                  / ____|  _ \_   _|
+ | |  | |_ __   ___ _ __ | (___ | |_) || |
+ | |  | | '_ \ / _ \ '_ \ \___ \|  _ < | |
+ | |__| | |_) |  __/ | | |____) | |_) || |_
+  \____/| .__/ \___|_| |_|_____/|____/_____|
+        | |
+        |_|
+
+Platform Name          : QEMU Virt Machine
+Platform HART Features : RV64ACDFIMSU
+Platform Max HARTs     : 8
+Current Hart           : 0
+Firmware Base          : 0x80000000
+Firmware Size          : 112 KB
+Runtime SBI Version    : 0.1
+
+PMP0: 0x0000000080000000-0x000000008001ffff (A)
+PMP1: 0x0000000000000000-0xffffffffffffffff (A,R,W,X)
+(THU.CST) os is loading ...
+
+Special kernel symbols:
+  entry  0xc0200036 (virtual)
+  etext  0xc0206772 (virtual)
+  edata  0xc02a1170 (virtual)
+  end    0xc02ac6f8 (virtual)
+Kernel executable memory footprint: 690KB
+memory management: default_pmm_manager
+physcial memory map:
+  memory: 0x07e00000, [0x80200000, 0x87ffffff].
+vapaofset is 18446744070488326144
+check_alloc_page() succeeded!
+check_pgdir() succeeded!
+check_boot_pgdir() succeeded!
+use SLOB allocator
+kmalloc_init() succeeded!
+check_vma_struct() succeeded!
+Store/AMO page fault
+page fault at 0x00000100: K/W
+check_pgfault() succeeded!
+check_vmm() succeeded.
+SWAP: manager = fifo swap manager
+BEGIN check_swap: count 1, total 31567
+setup Page Table for vaddr 0X1000, so alloc a page
+setup Page Table vaddr 0~4MB OVER!
+set up init env for check_swap begin!
+Store/AMO page fault
+page fault at 0x00001000: K/W
+Store/AMO page fault
+page fault at 0x00002000: K/W
+Store/AMO page fault
+page fault at 0x00003000: K/W
+Store/AMO page fault
+page fault at 0x00004000: K/W
+set up init env for check_swap over!
+write Virt Page c in fifo_check_swap
+write Virt Page a in fifo_check_swap
+write Virt Page d in fifo_check_swap
+write Virt Page b in fifo_check_swap
+write Virt Page e in fifo_check_swap
+Store/AMO page fault
+page fault at 0x00005000: K/W
+swap_out: i 0, store page in vaddr 0x1000 to disk swap entry 2
+write Virt Page b in fifo_check_swap
+write Virt Page a in fifo_check_swap
+Store/AMO page fault
+page fault at 0x00001000: K/W
+swap_out: i 0, store page in vaddr 0x2000 to disk swap entry 3
+swap_in: load disk swap entry 2 with swap_page in vadr 0x1000
+write Virt Page b in fifo_check_swap
+Store/AMO page fault
+page fault at 0x00002000: K/W
+swap_out: i 0, store page in vaddr 0x3000 to disk swap entry 4
+swap_in: load disk swap entry 3 with swap_page in vadr 0x2000
+write Virt Page c in fifo_check_swap
+Store/AMO page fault
+page fault at 0x00003000: K/W
+swap_out: i 0, store page in vaddr 0x4000 to disk swap entry 5
+swap_in: load disk swap entry 4 with swap_page in vadr 0x3000
+write Virt Page d in fifo_check_swap
+Store/AMO page fault
+page fault at 0x00004000: K/W
+swap_out: i 0, store page in vaddr 0x5000 to disk swap entry 6
+swap_in: load disk swap entry 5 with swap_page in vadr 0x4000
+write Virt Page e in fifo_check_swap
+Store/AMO page fault
+page fault at 0x00005000: K/W
+swap_out: i 0, store page in vaddr 0x1000 to disk swap entry 2
+swap_in: load disk swap entry 6 with swap_page in vadr 0x5000
+write Virt Page a in fifo_check_swap
+Load page fault
+page fault at 0x00001000: K/R
+swap_out: i 0, store page in vaddr 0x2000 to disk swap entry 3
+swap_in: load disk swap entry 2 with swap_page in vadr 0x1000
+check_swap() succeeded!
+++ setup timer interrupts
+kernel_execve: pid = 2, name = "forktest".
+Breakpoint
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2012dc1b
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20132413
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20135813
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20138c13
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2013c013
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2013f413
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20142813
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20145c13
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20149013
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2014c413
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2014f813
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20152c13
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20156013
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20159413
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2015c813
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20160013
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20163413
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20166813
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20169c13
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2016d013
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20170413
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20173813
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20176c13
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2017a413
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2017d813
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20180c13
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20184013
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20187413
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2018a813
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x2018dc13
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20191013
+Store/AMO page fault
+
+
+COW: ptep 0xc04b9ff8, pte 0x20194813
+I am child 31
+Store/AMO page fault
+
+
+COW: ptep 0xc064aff8, pte 0x20191013
+I am child 30
+Store/AMO page fault
+
+
+COW: ptep 0xc063cff8, pte 0x2018dc13
+I am child 29
+Store/AMO page fault
+
+
+COW: ptep 0xc062fff8, pte 0x2018a813
+I am child 28
+Store/AMO page fault
+
+
+COW: ptep 0xc0622ff8, pte 0x20187413
+I am child 27
+Store/AMO page fault
+
+
+COW: ptep 0xc0615ff8, pte 0x20184013
+I am child 26
+Store/AMO page fault
+
+
+COW: ptep 0xc0608ff8, pte 0x20180c13
+I am child 25
+Store/AMO page fault
+
+
+COW: ptep 0xc05fbff8, pte 0x2017d813
+I am child 24
+Store/AMO page fault
+
+
+COW: ptep 0xc05eeff8, pte 0x2017a413
+I am child 23
+Store/AMO page fault
+
+
+COW: ptep 0xc05e1ff8, pte 0x20176c13
+I am child 22
+Store/AMO page fault
+
+
+COW: ptep 0xc05d3ff8, pte 0x20173813
+I am child 21
+Store/AMO page fault
+
+
+COW: ptep 0xc05c6ff8, pte 0x20170413
+I am child 20
+Store/AMO page fault
+
+
+COW: ptep 0xc05b9ff8, pte 0x2016d013
+I am child 19
+Store/AMO page fault
+
+
+COW: ptep 0xc05acff8, pte 0x20169c13
+I am child 18
+Store/AMO page fault
+
+
+COW: ptep 0xc059fff8, pte 0x20166813
+I am child 17
+Store/AMO page fault
+
+
+COW: ptep 0xc0592ff8, pte 0x20163413
+I am child 16
+Store/AMO page fault
+
+
+COW: ptep 0xc0585ff8, pte 0x20160013
+I am child 15
+Store/AMO page fault
+
+
+COW: ptep 0xc0578ff8, pte 0x2015c813
+I am child 14
+Store/AMO page fault
+
+
+COW: ptep 0xc056aff8, pte 0x20159413
+I am child 13
+Store/AMO page fault
+
+
+COW: ptep 0xc055dff8, pte 0x20156013
+I am child 12
+Store/AMO page fault
+
+
+COW: ptep 0xc0550ff8, pte 0x20152c13
+I am child 11
+Store/AMO page fault
+
+
+COW: ptep 0xc0543ff8, pte 0x2014f813
+I am child 10
+Store/AMO page fault
+
+
+COW: ptep 0xc0536ff8, pte 0x2014c413
+I am child 9
+Store/AMO page fault
+
+
+COW: ptep 0xc0529ff8, pte 0x20149013
+I am child 8
+Store/AMO page fault
+
+
+COW: ptep 0xc051cff8, pte 0x20145c13
+I am child 7
+Store/AMO page fault
+
+
+COW: ptep 0xc050fff8, pte 0x20142813
+I am child 6
+Store/AMO page fault
+
+
+COW: ptep 0xc0502ff8, pte 0x2013f413
+I am child 5
+Store/AMO page fault
+
+
+COW: ptep 0xc04f5ff8, pte 0x2013c013
+I am child 4
+Store/AMO page fault
+
+
+COW: ptep 0xc04e8ff8, pte 0x20138c13
+I am child 3
+Store/AMO page fault
+
+
+COW: ptep 0xc04dbff8, pte 0x20135813
+I am child 2
+Store/AMO page fault
+
+
+COW: ptep 0xc04ceff8, pte 0x20132413
+I am child 1
+Store/AMO page fault
+
+
+COW: ptep 0xc04c1ff8, pte 0x2012dc1b
+I am child 0
+forktest pass.
+all user-mode processes have quit.
+init check memory pass.
+kernel panic at kern/process/proc.c:493:
+    initproc exit.
+
